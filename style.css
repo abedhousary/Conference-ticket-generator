@@ -1,0 +1,261 @@
+:root { 
+--Neutral-0: hsl(0, 0%, 100%);
+--Neutral-300: hsl(252, 6%, 83%);
+--Neutral-500: hsl(245, 15%, 58%);
+--Neutral-700: hsl(245, 19%, 35%);
+--Neutral-900: hsl(248, 70%, 10%);
+--Orange-500: hsl(7, 88%, 67%);
+--Orange-700: hsl(7, 71%, 60%);
+--Gradient-text: hsl(7, 86%, 67%) to hsl(0, 0%, 100%);
+}
+* {
+    font-family: "Inconsolata";
+}
+body {
+    background-image: url("./assets/images/background-desktop.png");
+    background-position: bottom;
+    background-size: cover  ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-y: hidden;
+    margin: 0px;
+}
+.pattern-1 {
+    position: absolute;
+    top: -80px;
+    left: 5%;
+}
+
+.lines {
+    width: 100%;
+    height: 50%;
+    background-image: url("./assets/images/pattern-lines.svg");
+    position: absolute;
+    top:0;
+}
+.pattern-2 {
+    position: absolute;
+    top: 80px;
+    right: 5%;
+}
+.pattern-3 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.pattern-1:nth-child(5){
+    top: 50%;
+    left: 60%;
+}
+.container {
+    width:80%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container-ticket {
+    width:80%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.container .title {
+    color: var(--Neutral-0);
+    font-weight: 700;
+    font-size: 51px;
+    width: 700px;
+    text-align: center;
+    margin-top: 50px;
+}
+.description {
+    color: var(--Neutral-300);
+    font-size: 20px;
+    margin: 20px;
+}
+.upload-container {
+    width:400px;
+    height: 200px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.upload-container .upload-title {
+    color: var(--Neutral-300);
+    font-weight: 500;
+}
+.upload-drag-drop {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    border:2px dashed var(--Neutral-500);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.upload-drag-drop .upload-button {
+    width:50px;
+    height: 50px;
+    background-color: hsla(246, 15%, 58%, 0.244);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid var(--Neutral-500);
+    cursor: pointer;
+}
+.upload-drag-drop .msg {
+    color: var(--Neutral-500);
+    margin-top: 20px;
+    font-weight: 500;
+}
+.help-msg {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 10px;
+    color: var(--Neutral-300);
+    font-size: 11px;
+    width: 400px;
+    margin-top: 20px;
+}
+.form {
+    width: 26%;
+    height: 500px;
+    display: flex;
+    justify-content: center ;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.form .label {
+    color: var(--Neutral-0);
+    font-family: 500;
+    margin-top: 20px;
+}
+.input {
+    width: 100%;
+    height: 50px;
+    background-color: hsla(246, 15%, 58%, 0.244);
+    border:1px solid var(--Neutral-500);
+    border-radius: 10px;
+    margin-top: 20px;
+    color: var(--Neutral-0);
+    padding-left: 20px;
+    font-size: 21px;
+}
+.input:hover,.upload-drag-drop:hover{
+    background-color: hsl(246deg 15% 58% / 47%);
+    cursor: pointer;
+}
+.button {
+    margin-top: 20px;
+    width: 107%;
+    height: 50px;
+    background-color: var(--Orange-500);
+    color: var(--Neutral-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.button:hover{
+    box-shadow: 0px 5px 0px 0px hsl(6.21deg 88.96% 68.04%);
+}
+.title-ticket {
+    color: var(--Neutral-0);
+    font-weight: 700;
+    font-size: 51px;
+    width: 650px;
+    text-align: center;
+    margin-top: 50px;
+}
+.gradient-text {
+    background: linear-gradient(to right, hsl(7, 86%, 67%) , hsl(0, 0%, 100%));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.ticket-description {
+    color: var(--Neutral-300);
+    font-size: 21px;
+    width: 400px;
+    text-align: center;
+    line-height: 26px;
+    margin-top: 20px;
+}
+.email {
+    color: var(--Orange-500)    ;
+}
+
+.ticket {
+    width:600px;
+    height: 300px;
+    background-image: url(./assets/images/pattern-ticket.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.company-info {
+    color: var(--Neutral-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+}
+.customer-info {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.personal-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top:60px;
+}
+.customer-data {
+    width: 200px;
+    height: 100px;
+     margin-top:60px;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.customer-name {
+    color: var(--Neutral-0);
+    font-size: 24px;
+}
+.customer-github {
+    display: flex;
+    align-items: center;
+    color: var(--Neutral-300);
+    width: 145px;
+    gap: 10px;
+}
+.ticket-id {
+    color: var(--Neutral-500);
+    position: absolute;
+    right: 3%;
+    transform: rotate(90deg);
+    font-size: 24px;
+    font-weight: 700;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Conference ticket generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="./assets/images/pattern-circle.svg" class="pattern-1" />
+    <div class="lines"></div>
+    <img
+      src="./assets/images/pattern-squiggly-line-top.svg"
+      class="pattern-2"
+    />
+    <img
+      src="./assets/images/pattern-squiggly-line-bottom.svg"
+      class="pattern-3"
+    />
+    <img src="./assets/images/pattern-circle.svg" class="pattern-1" />
+    <div class="container">
+      <img src="./assets/images/logo-full.svg" />
+      <div class="title">Your Journey to Coding Conf 2025 Starts Here!</div>
+      <div class="description">
+        Secure your spot at next year's biggest coding conference.
+      </div>
+      <div class="upload-container">
+        <div class="upload-title">Upload Avatar</div>
+        <div class="upload-drag-drop">
+          <div class="upload-button">
+            <img src="./assets/images/icon-upload.svg" alt="" srcset="" />
+          </div>
+          <div class="msg">Drag and drop or click to upload</div>
+        </div>
+      </div>
+      <div class="help-msg">
+        <img src="./assets/images/icon-info.svg" alt="" />
+        Upload your photo (JPG or PNG, max size: 500KB).
+      </div>
+      <div class="form">
+        <div class="label">Full Name</div>
+        <input type="text" class="input" id = "name" />
+        <div class="label">Email Address</div>
+        <input type="text" class="input" placeholder="example@email.com" id = "email" />
+        <div class="label">GitHub Username</div>
+        <input type="text" class="input" placeholder="@yourusername" id = "username" />
+        <div class="button">Generate My Ticket</div>
+      </div>
+    </div>
+
+    <div class="container-ticket">
+      <img src="./assets/images/logo-full.svg" />
+      <div class="title-ticket">
+        Congrats, <span class="gradient-text" id = "name-holder">Abed housary !</span> Your ticket
+        is ready.
+      </div>
+      <div class="ticket-description">
+        We've emailed your ticket to
+        <span class="email">demo@demo.com</span> and will send updates in the
+        run up to the event.
+      </div>
+      <div class="ticket">
+        <img
+          src="./assets/images/logo-full.svg"
+          width="250px"
+          height="50px"
+          style="margin-left: 20px"
+        />
+        <div class="company-info">Jan 31, 2025 / Austin, TX</div>
+        <div class="customer-info">
+          <img src="./assets/images/image-avatar.jpg" class="personal-photo" />
+          <div class="customer-data">
+            <div class="customer-name">Abed housary</div>
+            <div class="customer-github">
+              <img src="./assets/images/icon-github.svg" /><span class = "usernameholder">@abedhousary</span>
+            </div>
+          </div>
+        </div>
+        <div class="ticket-id">#01609</div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
